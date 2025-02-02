@@ -1,6 +1,6 @@
 resource "aws_route53_record" "expense" {
   count   = length(var.instance_names)
-  zone_id =  local.zone_id
+  zone_id = local.zone_id
   #backend.ramana3490.online
   name            = var.instance_names[count.index] == "frontend" ? local.domain_name : "${var.instance_names[count.index]}.${local.domain_name}"
   type            = "A"

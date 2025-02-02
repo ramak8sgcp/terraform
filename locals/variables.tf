@@ -1,6 +1,6 @@
 variable "instance_names" {
-  type    = list(string)
-  default = ["mysql", "backend", "frontend"]
+  type        = list(string)
+  default     = ["mysql", "backend", "frontend"]
   description = "description"
 }
 
@@ -13,6 +13,6 @@ variable "instance_names" {
 #   default = "Z07026951IZYV04HDC3NF"
 # }
 
-variable "environment"{
+variable "environment" {
   default = "prod"
 }
